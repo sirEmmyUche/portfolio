@@ -2,7 +2,7 @@ import '../styles/home.css'
 
  function About(){
     return(
-        <section className='about-container'>
+        <section id='about-container'>
             <div className='about-page-first-div'>
                 <div className='description'>
                     <p><span>Hello!</span> I'm Uche Osuchukwu,<br/>
@@ -12,27 +12,27 @@ import '../styles/home.css'
                         <p>Web and Mobile App</p>
                     </div>
                 </div>
-                <div>
-                    <img src='/images/profile-pic.png' alt='my pics'/>
+                <div className='my-profile-pic-wrapper'>
+                    <img src='/images/profile-pic(3).png' alt='my pics'/>
                 </div>
             </div>
             <div className='skill'>
                 <h3>Stack</h3>
                 <div className='skill-box-wrapper'>
                 <div className='skill-box'>
-                    <img src='/icons/html.png' alt='HTML' className='image'/>
+                    <img src='/icons/html.png' alt='HTML'/>
                     <h4>HTML</h4>
                 </div>
                 <div className='skill-box'>
-                    <img src='/icons/css.png' alt='CSS' className='image'/>
+                    <img src='/icons/css.png' alt='CSS'/>
                     <h4>CSS</h4>
                 </div>
                 <div className='skill-box'>
-                    <img src='/icons/javascript.png' alt='javascript' className='image'/>
+                    <img src='/icons/javascript.png' alt='javascript'/>
                     <h4>JavaScript</h4>
                 </div>
                 <div className='skill-box'>
-                    <img src='/icons/react-icon.png' alt='react'className='image'/>
+                    <img src='/icons/react-icon.png' alt='react'/>
                     <h4>React/React-Native</h4>
                 </div>
                 <div className='skill-box'>

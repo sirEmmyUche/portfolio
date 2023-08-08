@@ -18,8 +18,8 @@ function Nav() {
       <ul id={toggleMenu? "hidephoneMenubar" :"phoneMenubar"}>
         <li><Link to={"/"}>Home</Link></li>
         <li><Link to={"/about"}>About</Link></li>
-        <li><Link to={"/"}>Projects</Link></li>
-        <li><Link to={"/"}>Contact</Link></li>
+        <li><Link to={"/project"}>Projects</Link></li>
+        <li><Link to={"/contact"}>Contact</Link></li>
       </ul>
       <div className="menubar"><img 
       src="/images/icon-menu.svg" 

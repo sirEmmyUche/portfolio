@@ -3,8 +3,8 @@ import Intro from "../pages/intro"
 
  function Home(){
     return(
-        <header>
-            <Nav/>
+        <header className="home-header">
+            {/* <Nav/> */}
             <Intro/>
         </header>
     )
