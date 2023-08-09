@@ -6,27 +6,26 @@ createServer({
     },
   
     routes() {
-      this.namespace = "api"
+      this.namespace = "api/"
   
-      this.get("/projects", (schema, request) => {
+      this.get("projects", (schema, request) => {
         return schema.projects.all()
       })
 
-
-      this.get("/projects/:id", (schema, request) => {
-        let id = request.params.id
-      
-        return schema.projects.find(id)
+      this.get("projects/:id", (schema, request) => {
+        const id = request.params.id;
+        return (schema.projects.find(id))
       })
 
     },
   
     seeds(server) {
-      server.create("project", {id:1,
+      server.create("project", {id:"1",
         name: "HIMS",
         imgUrl:"/images/hims.png", 
-        link:"https/the link",
-        description:`This web app is a great solution for reducing fraud and theft in the real estate industry.
+        link:"#",
+        description:`Housing Information Management System (HIMS) is a web app designed to provide great solution for 
+        reducing fraud and theft in the real estate industry.
          By providing users with a quick and easy way to verify the real-time owner of a property,
         it helps to ensure that buyers are not being scammed. The app also includes an image of the property,
          which can be helpful for buyers who are looking to purchase a home sight unseen.
@@ -40,10 +39,10 @@ createServer({
       isMobile:false}),
 
         server.create("project",
-          {id:2,
+          {id:"2",
             name:"shotIt",
             imgUrl:"/images/link-shortening-app.png",
-            link:"the link",
+            link:"#",
           description:`This web app is a simple and effective way to shorten long links.
            It is a great tool for marketers who want to make their links more concise and easy to remember. 
            The app also includes a feature that allows users to track the number of clicks on their shortened links.
@@ -56,9 +55,10 @@ createServer({
         )
         
             server.create("project",
-              {id:3,name:"Mobile app e-commerce",
+              {id:"3",
+              name:"Mobile app e-commerce",
         imgUrl:"/images/e-commerce-mobile-app.png",
-      link:"the link",
+      link:"#",
     description:`This mobile app is a great way for users to purchase goods and services online.
      It is easy to use and convenient.
     The unique feature about it is that it allows users to pay by installment for whatever goods they are purchasing.
@@ -77,37 +77,3 @@ createServer({
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-// import { createServer, Model } from "miragejs"
-
-// createServer({
-//   models: {
-//     project: Model,
-//     mobile: Model
-//   },
-
-//   routes() {
-//     this.namespace = "api"
-
-//     this.get("/project", () => {
-//       return {
-//         movies: [
-//           { id: 1, name: "Inception", year: 2010, description: "vdhbfnbn", img:"/emmavdh/photo" },
-//           { id: 2, name: "Interstellar", year: 2014 },
-//           { id: 3, name: "Dunkirk", year: 2017 },
-//         ],
-//       }
-//     })
-//   },
-// })

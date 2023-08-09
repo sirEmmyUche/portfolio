@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -14,6 +16,7 @@
     scroll-behavior: smooth;
     background-color: var(--main-bg-color);
     color: var(--main-color);
+    font-family: 'Bentham', serif;
 }
 
 
@@ -22,7 +25,6 @@
 .home-nav{
     height: 10vh;
     border: 1px solid transparent;
-    background: inherit;
     display: flex;
     justify-content: space-around;
     align-items: center;   
@@ -150,7 +152,9 @@ span{
 }
 
 .skill-box-wrapper{
-    border: 1px solid #ffff00;
+    /* border: 1px solid #ffff00; */
+    border: 1px solid #33A7F4;
+    box-shadow: 0px 0px 20px 2px #33A7F4;
     padding: 25px;
     width: 100%;
     max-width: 50%;
@@ -306,12 +310,21 @@ textarea{
     transition: all 0.3s ease 0s;
    }
 
+.project-pg-ul li:hover{
+    color: var(--main-color);
+}
+
 .map-project-wrapper{
     cursor: pointer;
     width: 25%;
     margin: 10px;
     padding: 20px;
-    border: 1px solid blue;
+    border: 1px solid #33A7F4;
+    box-shadow: 0px 0px 20px 2px #33A7F4;
+}
+
+.map-project-wrapper a{
+    padding: 0;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -334,7 +347,7 @@ textarea{
 .project-render{
     margin-top: 2rem;
     padding: 20px;
-    border: 1px solid red;
+    border: 1px solid transparent;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -356,6 +369,89 @@ textarea{
     color: #89715B;
 }
 
+/* project details page  */
+
+.project-details-loading{
+    text-align: center;
+    color: #89715B;
+    font-size: 2rem;
+}
+
+.project-details-pg{
+    margin-top: 3rem;
+    max-width: 100%;
+    border: 1px solid transparent;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.display-project-detail{
+    border: 1px solid transparent;
+    padding: 20px;
+    max-width: 75%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-direction: column;
+}
+
+.project-details{
+    color: #89715B;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.projectId-img-box{
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.project-desc{
+    font-size: 1.5rem;
+    /* text-align: center; */
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+
+.projectId-name{
+    text-align: left;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.link-to-project{
+    font-size: 1.5rem;
+    color: #89715B;
+    text-align: center;
+}
+
+.link-to-project:hover{
+    color: rgb(0, 0, 255);
+}
+
+/* footer page */
+footer{
+    margin-top: 5rem;
+}
+
+footer>h1{
+    text-align: center;
+    font-size: 2rem;
+    border: 1px solid transparent;
+    padding: 20px;
+}
+
+#footer-link{
+    color:#89715B;
+}
+
+#footer-link:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
 /* styling mobile responsiveness */
 @media screen and (max-width: 768px) { 
 #hidephoneMenubar{
@@ -437,7 +533,15 @@ textarea{
 }
 
 /* project page */
-.map-project-wrapper{
+.map-project-wrapper,.project-pg-ul{
+    width: 100%;
+}
+
+.display-project-detail{
+    max-width: 100%;
+}
+
+.projectId-img-box{
     width: 100%;
 }
 

@@ -1,4 +1,5 @@
 import { useState,useEffect,useReducer,useRef} from 'react'
+import { Link } from 'react-router-dom';
 import '../styles/home.css'
 
 function Project(){
@@ -40,29 +41,38 @@ function Project(){
         if(viewproject.all===true){
             return(
                 <div key={item.id} className='map-project-wrapper'>
-                    <div className='project-img-container'>
-                        <img src={item.imgUrl} alt='project image'/>
-                    </div>
-                    <div className='map-item-name'>{item.name}</div>
+                    <Link to={`/project/${item.id}`}>
+                        <div className='project-img-container'>
+                            <img src={item.imgUrl} alt='project image'/>
+                        </div>
+                        <div className='map-item-name'>{item.name}</div>
+                        <div className='map-item-name'>Read more...</div>
+                    </Link>
                 </div>
             )
         }else if(viewproject.web === true && item.isMobile == false){
             return (
                 <div key={item.id} className='map-project-wrapper'>
-                    <div className='project-img-container'>
-                        <img src={item.imgUrl} alt='project image'/>
-                    </div>
-                    <div className='map-item-name'>{item.name}</div>
+                    <Link to={`/project/${item.id}`}>
+                        <div className='project-img-container'>
+                            <img src={item.imgUrl} alt='project image'/>
+                        </div>
+                        <div className='map-item-name'>{item.name}</div>
+                        <div className='map-item-name'>Read more...</div>
+                    </Link>
                 </div>
             )
         }
         if(viewproject.mobile === true && item.isMobile==true){
             return (
                 <div key={item.id} className='map-project-wrapper'>
-                    <div className='project-img-container'>
-                        <img src={item.imgUrl}alt='project image'/>
-                    </div>
-                    <div className='map-item-name'>{item.name}</div>
+                    <Link to={`/project/${item.id}`}>
+                        <div className='project-img-container'>
+                            <img src={item.imgUrl}alt='project image'/>
+                        </div>
+                        <div className='map-item-name'>{item.name}</div>
+                        <div className='map-item-name'>Read more...</div>
+                    </Link>
                 </div>
             )
         }
