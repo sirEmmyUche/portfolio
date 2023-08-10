@@ -38,7 +38,7 @@ function Project(){
 
     const renderProject = project.map((item)=>{
         
-        if(viewproject.all===true){
+        if(viewproject.all == true){
             return(
                 <div key={item.id} className='map-project-wrapper'>
                     <Link to={`/project/${item.id}`}>

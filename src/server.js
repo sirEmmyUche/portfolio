@@ -56,7 +56,7 @@ createServer({
         
             server.create("project",
               {id:"3",
-              name:"Mobile app e-commerce",
+              name:"Mobile App E-Commerce",
         imgUrl:"/images/e-commerce-mobile-app.png",
       link:"#",
     description:`This mobile app is a great way for users to purchase goods and services online.

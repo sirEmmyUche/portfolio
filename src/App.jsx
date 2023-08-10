@@ -16,8 +16,8 @@ const router = createBrowserRouter([{path:"*", Component:Root}])
 function Root(){
   return (
     <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route element={<Layout/>}>
+        <Route index element={<Home/>}/>
+        <Route path="/"element={<Layout/>}>
           <Route path="/about" element={<About/>}/>
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/project" element={<Project/>}/>
