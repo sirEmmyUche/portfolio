@@ -4,8 +4,6 @@ import '../styles/home.css'
 
 function Project(){
     const [project, setProject] = useState([]);
-    
-    const view = {web:false, all:true, mobile:false};
 
     const [viewproject, dispatch] = useReducer(
         (prevState, action)=>{
@@ -15,7 +13,7 @@ function Project(){
                 case "VIEW_MOBILE_APP":return{...prevState, web:false, mobile:true, all:false};
                 default: prevState;
             }
-        }, view
+        }, {web:false, all:true, mobile:false}
         ) 
 
         const isInitialMount = useRef(true);
@@ -34,7 +32,7 @@ function Project(){
             }catch(err){console.log(err)}
         }
         getProject();
-    },[viewproject]);
+    },[viewproject, project]);
 
     const renderProject = project.map((item)=>{
         
