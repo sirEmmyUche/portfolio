@@ -1,9 +1,16 @@
+import { useState, useEffect } from 'react';
 import '../styles/home.css'
 
  function Intro(){
+    const [animate, setAnimate] = useState(false);
+
+    useEffect(() => {
+        setAnimate(true);
+      }, []);
+
     return(
         <main className='main-container'>
-            <div className='intro-first-div'>
+            <div className={`intro-first-div ${animate ? 'animate' : ''}`}>
                 <h1 className='typing-text'>Uche Osuchukwu</h1>
                 <p>Personal Portfolio</p>
             </div>
