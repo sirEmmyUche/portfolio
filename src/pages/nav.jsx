@@ -5,6 +5,7 @@ import '../styles/home.css'
 
 function Nav() {
   const [toggleMenu, setToggleMenu] = useState(null);
+  
   const handleToggleMenu = ()=>{
     setToggleMenu(!toggleMenu)
   }
@@ -18,7 +19,7 @@ function Nav() {
                 <li>
                   <Link to={"/"}>Home</Link>
                 </li>
-            <li >
+            <li > 
               <Link to={"/about"}>About</Link>
             </li>
                 <li >

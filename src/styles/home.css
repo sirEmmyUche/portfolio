@@ -93,6 +93,36 @@ a{
     font-size: 2rem;
 }
 
+.typing-text {
+    color: var(--main-color);
+    font-size: 3rem;
+    overflow: hidden; /* Hide overflowing characters */
+    white-space: nowrap; /* Prevent line breaks */
+    border-right: 0.15em solid var(--main-color); /* Create typing cursor */
+    width: 0; /* Start with zero width, text will expand it */
+    animation: typing 3s steps(40) infinite, blink-caret 0.75s step-end infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 15ch; /* Adjust based on the length of your text */
+    }
+  }
+
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: var(--main-color);
+    }
+  }
+
+  
+
 /* styling the about page */
 #about-container{
     min-height: 100vh;

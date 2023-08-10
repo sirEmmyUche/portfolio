@@ -23,7 +23,7 @@ createServer({
       server.create("project", {id:"1",
         name: "HIMS",
         imgUrl:"/images/hims.png", 
-        link:"#",
+        link:"https://house-verification-system.vercel.app/",
         description:`Housing Information Management System (HIMS) is a web app designed to provide great solution for 
         reducing fraud and theft in the real estate industry.
          By providing users with a quick and easy way to verify the real-time owner of a property,
@@ -42,7 +42,7 @@ createServer({
           {id:"2",
             name:"shotIt",
             imgUrl:"/images/link-shortening-app.png",
-            link:"#",
+            link:"https://link-shortener-six-iota.vercel.app/",
           description:`This web app is a simple and effective way to shorten long links.
            It is a great tool for marketers who want to make their links more concise and easy to remember. 
            The app also includes a feature that allows users to track the number of clicks on their shortened links.
