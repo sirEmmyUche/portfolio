@@ -32,7 +32,7 @@ function Project(){
             }catch(err){console.log(err)}
         }
         getProject();
-    },[viewproject, project]);
+    },[project, viewproject]);
 
     const renderProject = project.map((item)=>{
         
