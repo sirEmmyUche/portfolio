@@ -17,7 +17,7 @@ function Contact(){
                 if(res.ok == true){
                     setFeedback("Thank you")
                 }else{
-                    setFeedback("Soory, an error occured and this is on us")
+                    setFeedback("Sorry, there was an error!")
                 }
             }catch(err){console.log(err)}
     }
