@@ -10,13 +10,15 @@ createServer({
   
       this.get("projects", (schema, request) => {
         return schema.projects.all()
-      })
+      });
 
       this.get("projects/:id", (schema, request) => {
         const id = request.params.id;
         return (schema.projects.find(id))
-      })
+      });
 
+      this.passthrough("https://formspree.io/f/mwkdlbyq")
+      
     },
   
     seeds(server) {
