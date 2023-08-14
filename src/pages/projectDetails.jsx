@@ -28,7 +28,7 @@ function ProjectDetails(){
                 </div>
                 <div className="projectId-name">{projectId.name}</div>
                 <div className="project-desc">{projectId.description}</div>
-                <a href={projectId.link} className="link-to-project">Check project</a>
+                <a href={projectId.link} target="_blank" className="link-to-project">Check project</a>
             </div>
         </div>
     )
