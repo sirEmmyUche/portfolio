@@ -60,7 +60,7 @@ createServer({
               {id:"3",
               name:"Mobile App E-Commerce",
         imgUrl:"/images/e-commerce-mobile-app.png",
-      link:"#",
+      link:"https://expo.dev/preview/update?message=Reusable%20alert&updateRuntimeVersion=1.0.0&createdAt=2024-09-17T12%3A37%3A13.813Z&slug=exp&projectId=a38c5ae5-8914-484c-a17b-430c462c68cd&group=f953809d-6b63-4339-a16f-ada8d72c84f9",
     description:`This mobile app is a great way for users to purchase goods and services online.
      It is easy to use and convenient.
     The unique feature about it is that it allows users to pay by installment for whatever goods they are purchasing.

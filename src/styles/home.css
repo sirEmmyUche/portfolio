@@ -461,7 +461,16 @@ textarea{
 .link-to-project:hover{
     color: rgb(0, 0, 255);
 }
-
+.forMobile{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.expo-icon-wrapper{
+    width:35px;
+    margin-right: 1rem;
+}
 /* footer page */
 footer{
     margin-top: 5rem;

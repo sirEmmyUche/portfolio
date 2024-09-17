@@ -28,7 +28,22 @@ function ProjectDetails(){
                 </div>
                 <div className="projectId-name">{projectId.name}</div>
                 <div className="project-desc">{projectId.description}</div>
-                <a href={projectId.link} target="_blank" className="link-to-project">Check project</a>
+                {
+                projectId.isMobile?(
+                    <div className="forMobile">
+                        <div className="expo-icon-wrapper">
+                            <img src="/images/expo-svgrepo-com.svg" alt="expo go icon"/>
+                        </div>
+                        <a href={projectId.link} target="_blank" className="link-to-project">
+                            Scan App with Expo Go
+                        </a>
+                    </div>
+                ):(
+                    <div>
+                    <a href={projectId.link} target="_blank" className="link-to-project">Check project</a>
+                    </div>
+                )
+                }
             </div>
         </div>
     )
