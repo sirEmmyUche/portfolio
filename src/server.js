@@ -54,22 +54,32 @@ createServer({
            By shortening your links, you make them more memorable and easier to share. 
            This can lead to more clicks on your links, which can ultimately lead to more sales.`,
            isMobile:false}
-        )
+        ),
         
-            server.create("project",
+        server.create("project",
               {id:"3",
               name:"Mobile App E-Commerce",
-        imgUrl:"/images/e-commerce-mobile-app.png",
-      link:"https://expo.dev/preview/update?message=Reusable%20alert&updateRuntimeVersion=1.0.0&createdAt=2024-09-17T12%3A37%3A13.813Z&slug=exp&projectId=a38c5ae5-8914-484c-a17b-430c462c68cd&group=f953809d-6b63-4339-a16f-ada8d72c84f9",
-    description:`This mobile app is a great way for users to purchase goods and services online.
-     It is easy to use and convenient.
-    The unique feature about it is that it allows users to pay by installment for whatever goods they are purchasing.
-    The app includes a wide variety of products and services, from clothes and electronics to food and groceries.
-     Users can browse the app's catalog, add items to their cart, and checkout with just a few taps. 
-     The app also includes a delivery feature, so users can have their purchases delivered right to their door.
-    This app is a great way for users to shop from the comfort of their own homes. 
-    It is convenient, easy to use, and it offers a variety of payment options.`,
-  isMobile:true}    
+                imgUrl:"/images/e-commerce-mobile-app.png",
+              link:"https://expo.dev/preview/update?message=Reusable%20alert&updateRuntimeVersion=1.0.0&createdAt=2024-09-17T12%3A37%3A13.813Z&slug=exp&projectId=a38c5ae5-8914-484c-a17b-430c462c68cd&group=f953809d-6b63-4339-a16f-ada8d72c84f9",
+            description:`This mobile app is a great way for users to purchase goods and services online.
+            It is easy to use and convenient.
+            The unique feature about it is that it allows users to pay by installment for whatever goods they are purchasing.
+            The app includes a wide variety of products and services, from clothes and electronics to food and groceries.
+            Users can browse the app's catalog, add items to their cart, and checkout with just a few taps. 
+            The app also includes a delivery feature, so users can have their purchases delivered right to their door.
+            This app is a great way for users to shop from the comfort of their own homes. 
+            It is convenient, easy to use, and it offers a variety of payment options.`,
+          isMobile:true}    
+        ),
+
+         server.create("project",
+              {id:"4",
+              name:"AnoTrade",
+                imgUrl:"/images/anotarde.png",
+              link:"https://anotrade-trading-signal.vercel.app/",
+            description:`A leading online trading platform that provides trading signals for traders at all levels.
+            Our platform offers a trading signals that covers wide range of markets, including forex, stocks, cryptos, commodities, and CFDs for a competitive price, using advanced trading strategy..`,
+          isMobile:false}    
         )
     },
   })
