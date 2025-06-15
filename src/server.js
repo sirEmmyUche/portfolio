@@ -75,7 +75,7 @@ createServer({
          server.create("project",
               {id:"4",
               name:"AnoTrade",
-                imgUrl:"/images/anotarde.png",
+                imgUrl:"/images/anotrade.png",
               link:"https://anotrade-trading-signal.vercel.app/",
             description:`A leading online trading platform that provides trading signals for traders at all levels.
             Our platform offers a trading signals that covers wide range of markets, including forex, stocks, cryptos, commodities, and CFDs for a competitive price, using advanced trading strategy..`,
