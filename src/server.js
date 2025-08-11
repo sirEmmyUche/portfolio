@@ -22,8 +22,18 @@ createServer({
     },
   
     seeds(server) {
-       server.create("project",
+      server.create("project",
               {id:"1",
+              name:"Jamesy-Empire",
+                imgUrl:"/images/jamesyempire.png",
+              link:"https://jamesyempire-frontend.vercel.app/",
+            description:`Your first choice real estate company for booking, buying and selling properties.
+            Provides you with virtual tour, live chat with agents and secured payments with verified agents `,
+          isMobile:false}    
+        ),
+
+       server.create("project",
+              {id:"2",
               name:"AnoTrade",
                 imgUrl:"/images/anotrade.png",
               link:"https://anotrade-trading-signal.vercel.app/",
@@ -32,7 +42,7 @@ createServer({
           isMobile:false}    
         ),
 
-      server.create("project", {id:"2",
+      server.create("project", {id:"3",
         name: "HIMS",
         imgUrl:"/images/hims.png", 
         link:"https://house-verification-system.vercel.app/",
@@ -51,7 +61,7 @@ createServer({
       isMobile:false}),
 
         server.create("project",
-          {id:"3",
+          {id:"4",
             name:"shotIt",
             imgUrl:"/images/link-shortening-app.png",
             link:"https://link-shortener-six-iota.vercel.app/",
@@ -67,7 +77,7 @@ createServer({
         ),
         
         server.create("project",
-              {id:"4",
+              {id:"5",
               name:"Mobile App E-Commerce",
                 imgUrl:"/images/e-commerce-mobile-app.png",
               link:"https://expo.dev/preview/update?message=Reusable%20alert&updateRuntimeVersion=1.0.0&createdAt=2024-09-17T12%3A37%3A13.813Z&slug=exp&projectId=a38c5ae5-8914-484c-a17b-430c462c68cd&group=f953809d-6b63-4339-a16f-ada8d72c84f9",
